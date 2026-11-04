@@ -1,63 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <!-- Metadata for the browser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link to the CSS stylesheet -->
-    <link rel="stylesheet" href="styles-modified.css">
-
-    <!-- Title of the page -->
-    <title>Student CV</title>
+    <title>Elba Pérez — Portfolio & CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Main container for the CV -->
-    <div id="cv">
 
-        <!-- Student's name and title -->
-        <header>
-            <h1>Jane Doe</h1>
-            <p>Computer Science Student</p>
-        </header>
+    <header class="top-nav">
+        <div class="nav-left">
+            <span class="location">Madrid, ES</span>
+            <span class="availability">Available for freelance</span>
+        </div>
+        <div class="nav-right">
+            <a href="#about">Perfil</a>
+            <a href="#experience">Experiencia</a>
+            <a href="#education">Formación</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </header>
 
-        <!-- Contact information -->
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <address>
-                <p>Email: janedoe@example.com</p>
-                <p>Phone: +1234567890</p>
-            </address>
+    <main class="main-container">
+
+        <!-- Bloque Principal Estilo Vídeo Studio -->
+        <section class="hero-studio">
+            <div class="hero-content">
+                <span class="tag">Diseño & Data Analytics</span>
+                <h1>Elba Pérez*</h1>
+                <p class="hero-description">
+                    Diseñadora con experiencia en comunicación visual y diseño de producto[cite: 7], desarrollando
+                    soluciones centradas en el usuario y colaborando en proyectos multidisciplinares[cite: 7]. Admitida
+                    en el <strong>Máster en Data Analytics de la Universidad Francisco de Vitoria (2026)</strong>[cite:
+                    7].
+                </p>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="7.jpg" alt="Elba Pérez Studio" class="studio-img">
+            </div>
         </section>
 
-        <!-- Education details -->
-        <section id="education">
-            <h2>Education</h2>
-            <p>BS in Computer Science, XYZ University, 2023</p>
+        <!-- Secciones de Contenido tipo Studio -->
+        <section id="experience" class="section-block">
+            <div class="section-title">
+                <h2>Experiencia</h2>
+            </div>
+            <div class="section-body">
+                <div class="job-item">
+                    <span class="year">2025 – Presente</span>
+                    <h3>Diseñadora Freelance</h3>
+                    <p>Diseño de mobiliario urbano sostenible, experiencias digitales, campañas publicitarias y
+                        contenido para redes sociales[cite: 7]. Gestión integral de proyectos desde el briefing hasta la
+                        entrega[cite: 7].</p>
+                </div>
+                <div class="job-item">
+                    <span class="year">2025</span>
+                    <h3>Diseñadora | Engine Agency</h3>
+                    <p>Desarrollo de identidades visuales, campañas digitales, interfaces y proyectos de dirección de
+                        arte para clientes como Nike, PlayStation y Mastercard[cite: 7].</p>
+                </div>
+                <div class="job-item">
+                    <span class="year">2023</span>
+                    <h3>Prácticas de Diseño | Exponentia</h3>
+                    <p>Desarrollo de identidad visual y materiales de comunicación para Transforma 23, evento de
+                        divulgación tecnológica[cite: 7].</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-            </ul>
+        <section id="education" class="section-block">
+            <div class="section-title">
+                <h2>Formación & Reconocimientos</h2>
+            </div>
+            <div class="section-body grid-2">
+                <div>
+                    <h3>Educación</h3>
+                    <ul class="clean-list">
+                        <li><strong>Máster en Data Analytics</strong><br>Universidad Francisco de Vitoria (2026)[cite:
+                            7]</li>
+                        <li><strong>Doble Grado en Diseño y Publicidad</strong><br>Título Propio en Gráfico y
+                            Multimedia. UFV (2025)[cite: 7]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Hitos & Premios</h3>
+                    <ul class="clean-list">
+                        <li>Primer Premio TFG Social UFV (2024)[cite: 7]</li>
+                        <li>TFG "SomKairos" — Calificación 10. Expuesto en Madrid Design Festival 2025[cite: 7]</li>
+                        <li>Beca de Excelencia Académica UFV (5 cursos consecutivos)[cite: 7]</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <!-- Each work experience can be an article -->
-            <article>
-                <h3>Intern at ABC Corp</h3>
-                <p>Developed XYZ features.</p>
-            </article>
+        <section id="contact" class="contact-footer">
+            <h2>Let's create together.</h2>
+            <div class="contact-links">
+                <a href="mailto:elbapedeco@gmail.com">elbapedeco@gmail.com[cite: 7]</a>
+                <a href="https://www.linkedin.com/in/elbaperezdecortabitarte/" target="_blank">LinkedIn[cite: 7]</a>
+                <span>+34 640 373 454[cite: 7]</span>
+            </div>
         </section>
-    </div>
+
+    </main>
+
 </body>
 
 </html>

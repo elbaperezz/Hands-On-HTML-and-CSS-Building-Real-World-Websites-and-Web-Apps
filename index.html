@@ -3,153 +3,431 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elba Pérez - Portfolio & CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elba Pérez — Diseñadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="main-container">
-        <header class="hero-studio">
-            <div class="hero-text">
-                <div class="meta-links">
-                    <span>Madrid, España</span>
-                    <span>+34 640 373 454</span>
-                    <span>elbapedeco@gmail.com</span>
-                </div>
-                <h1>Elba Pérez</h1>
-                <p class="subtitle">Diseñadora con experiencia en comunicación visual y diseño de producto,
-                    desarrollando soluciones centradas en el usuario y colaborando en proyectos multidisciplinares.
-                    Admitida en el Máster en Data Analytics de la Universidad Francisco de Vitoria (septiembre de 2026),
-                    ampliando mi perfil en la intersección entre diseño, tecnología y análisis de datos.</p>
-                <div class="header-social">
-                    <a href="https://www.linkedin.com/in/elbaperezdecortabitarte/" target="_blank">LinkedIn Profile
-                        →</a>
-                </div>
+    <div class="cursor" id="cursor"></div>
+    <div class="progress" id="progress"></div>
+
+    <nav id="nav">
+        <a href="#top" class="logo">E.P.</a>
+        <ul class="mono">
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#somkairos">SomKairos</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn" href="https://www.somkairos.com" target="_blank" rel="noopener">SomKairos <span
+                class="arr">↗</span></a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="top">
+        <div class="hero-left">
+            <p class="mono" style="margin-bottom:1.6rem;color:var(--stone-dark)">Nº 001 — Madrid, España</p>
+            <h1><span class="ln"><span>Elba</span></span><span class="ln"><span><em>Pérez</em></span></span></h1>
+            <p class="hero-sub">Diseñadora en la intersección entre <span class="rotator"
+                    id="rotator"><span>diseño</span></span></p>
+        </div>
+
+        <div class="venus-wrap" id="venusWrap">
+            <div class="venus-ring"></div>
+            <div class="venus-halo"></div>
+            <img src="venus.png" alt="Venus paleolítica" class="venus" id="venus">
+            <div class="tag t1"><span class="dot"></span><span class="rule"></span><span class="txt mono">Diseño de
+                    producto</span></div>
+            <div class="tag t2"><span class="dot"></span><span class="rule"></span><span class="txt mono">Comunicación
+                    visual</span></div>
+            <div class="tag t3"><span class="dot"></span><span class="rule"></span><span class="txt mono">Data
+                    analytics</span></div>
+        </div>
+
+        <div class="hero-right">
+            <div class="ficha mono">
+                <p style="margin-bottom:1rem">Ficha técnica</p>
+                <dl>
+                    <dt>Oficio</dt>
+                    <dd>Diseñadora</dd>
+                    <dt>Origen</dt>
+                    <dd>Madrid</dd>
+                    <dt>Desde</dt>
+                    <dd>2018</dd>
+                    <dt>Fundadora</dt>
+                    <dd>SomKairos</dd>
+                    <dt>Estado</dt>
+                    <dd>Disponible ●</dd>
+                </dl>
             </div>
-            <div class="hero-image-box">
-                <div class="sticky-photo-wrapper">
-                    <img src="project_personal_CV/styles/foto.jpg" alt="Elba Pérez" class="profile-photo">
-                    <span class="photo-caption">Elba Pérez Studio</span>
-                </div>
-            </div>
-        </header>
+        </div>
 
-        <nav class="site-nav">
-            <a href="#experiencia">Experiencia</a>
-            <a href="#formacion">Formación</a>
-            <a href="#reconocimientos">Reconocimientos</a>
-            <a href="#idiomas">Idiomas</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <a href="#perfil" class="scroll-hint mono"><span>Descubrir</span><span class="line"></span></a>
+    </header>
 
-        <main>
-            <section id="experiencia" class="section-block">
-                <div class="section-title">
-                    <h2>Experiencia Profesional</h2>
-                </div>
-                <div class="section-body">
-                    <div class="job-item">
-                        <span class="year">2025 – Actualidad</span>
-                        <h3>Diseñadora Freelance</h3>
-                        <p>Diseño de mobiliario urbano sostenible, experiencias digitales, campañas publicitarias y
-                            contenido para redes sociales, combinando criterio creativo, visión estratégica y gestión
-                            integral de proyectos. Desarrollo de proyectos de diseño de producto, UX/UI, identidad
-                            visual y comunicación gráfica para distintos clientes, desde el briefing hasta la entrega
-                            final.</p>
-                    </div>
-                    <div class="job-item">
-                        <span class="year">2025</span>
-                        <h3>Diseñadora | Engine Agency</h3>
-                        <p>Desarrollo de identidades visuales, campañas digitales, interfaces y proyectos de dirección
-                            de arte para clientes como Nike, PlayStation y Mastercard. Colaboración en proyectos
-                            multidisciplinares de diseño, producción y espacios corporativos, asegurando la coherencia
-                            visual y la correcta ejecución de cada proyecto.</p>
-                    </div>
-                    <div class="job-item">
-                        <span class="year">2024-2025</span>
-                        <h3>Diseñadora Gráfica Freelance</h3>
-                        <p>Desarrollo de proyectos de identidad visual, comunicación gráfica y diseño editorial para
-                            diferentes clientes, gestionando simultáneamente la relación con el cliente y la ejecución
-                            de los proyectos.</p>
-                    </div>
-                    <div class="job-item">
-                        <span class="year">2023</span>
-                        <h3>Prácticas de Diseño | Exponentia</h3>
-                        <p>Desarrollo de la identidad visual y materiales de comunicación para Transforma 23, el evento
-                            anual de divulgación tecnológica de Exponentia. Colaboración en proyectos
-                            multidisciplinares, coordinando el desarrollo creativo con clientes, proveedores y equipos
-                            internos.</p>
-                    </div>
-                    <div class="job-item">
-                        <span class="year">2019-2022</span>
-                        <h3>Diseñadora de Producción Gráfica | Artes Gráficas</h3>
-                        <p>Control de calidad y supervisión de procesos de impresión offset y digital, coordinando la
-                            producción con clientes y proveedores para garantizar el resultado final.</p>
-                    </div>
-                    <div class="job-item">
-                        <span class="year">2018</span>
-                        <h3>Prácticas de Diseño Editorial | Revista El Duende</h3>
-                        <p>Maquetación editorial, edición de imágenes y preparación de archivos para publicaciones
-                            impresas y digitales, colaborando en los procesos de producción editorial.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="formacion" class="section-block">
-                <div class="section-title">
-                    <h2>Formación</h2>
-                </div>
-                <div class="section-body">
-                    <ul class="clean-list">
-                        <li><strong>Máster en Data Analytics</strong> (Inicio: septiembre de 2026) — Universidad
-                            Francisco de Vitoria</li>
-                        <li><strong>Doble Grado en Diseño y Publicidad</strong> con Título Propio en Diseño Gráfico y
-                            Multimedia. Universidad Francisco de Vitoria (2025)</li>
-                        <li><strong>Bachillerato Artístico</strong> — IES Margarita Salas (2020)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="reconocimientos" class="section-block">
-                <div class="section-title">
-                    <h2>Reconocimientos</h2>
-                </div>
-                <div class="section-body">
-                    <ul class="clean-list">
-                        <li><strong>Primer Premio TFG Social</strong> — Universidad Francisco de Vitoria (2024)</li>
-                        <li><strong>TFG de Diseño "SomKairos"</strong> — Calificación 10. Expuesto en Madrid Design
-                            Festival (2025)</li>
-                        <li><strong>Beca de Excelencia Académica</strong> — Universidad Francisco de Vitoria (Concedida
-                            durante cinco cursos consecutivos)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="idiomas" class="section-block">
-                <div class="section-title">
-                    <h2>Idiomas</h2>
-                </div>
-                <div class="section-body">
-                    <ul class="clean-list">
-                        <li><strong>Español:</strong> Nativo</li>
-                        <li><strong>Inglés:</strong> Nivel profesional</li>
-                        <li><strong>Portugués:</strong> Intermedio</li>
-                        <li><strong>Francés:</strong> Intermedio</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="contacto" class="contact-footer">
-                <h2>Let's create together.</h2>
-                <div class="contact-links">
-                    <a href="mailto:elbapedeco@gmail.com">elbapedeco@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/elbaperezdecortabitarte/" target="_blank">LinkedIn</a>
-                    <span>+34 640 373 454</span>
-                </div>
-            </section>
-        </main>
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>Diseño de producto</span><span>UX / UI</span><span>Identidad visual</span><span>Dirección de
+                arte</span><span>Diseño editorial</span><span>Mobiliario urbano sostenible</span><span>Campañas
+                digitales</span><span>Data analytics</span>
+            <span>Diseño de producto</span><span>UX / UI</span><span>Identidad visual</span><span>Dirección de
+                arte</span><span>Diseño editorial</span><span>Mobiliario urbano sostenible</span><span>Campañas
+                digitales</span><span>Data analytics</span>
+        </div>
     </div>
+
+    <!-- PERFIL -->
+    <section class="block" id="perfil">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">01 / Perfil</span>
+            <h2 class="sec-title">Diseño con <em>criterio,</em><br>pensado para personas.</h2>
+        </div>
+        <div class="perfil">
+            <span></span>
+            <p class="lead reveal">Diseñadora con experiencia en comunicación visual y diseño de producto, desarrollando
+                <em>soluciones centradas en el usuario</em> y colaborando en proyectos multidisciplinares. Ahora amplío
+                mi perfil hacia la intersección entre <em>diseño, tecnología y datos.</em></p>
+            <div class="stats reveal d2">
+                <div class="stat"><b data-count="6">0</b><small>experiencias profesionales</small></div>
+                <div class="stat"><b data-count="10">0</b><small>calificación TFG SomKairos</small></div>
+                <div class="stat"><b data-count="5">0</b><small>cursos con beca de excelencia</small></div>
+                <div class="stat"><b data-count="4">0</b><small>idiomas</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="block" id="experiencia" style="padding-top:40px">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">02 / Experiencia</span>
+            <h2 class="sec-title">Trayectoria, <em>capa a capa.</em></h2>
+        </div>
+        <div class="exp-list">
+            <div class="exp open reveal">
+                <button class="exp-btn"><span class="yr mono">2025 — Hoy</span><span class="role">Diseñadora
+                        <i>Freelance</i></span><span class="where mono">Independiente</span><span
+                        class="plus"></span></button>
+                <div class="exp-body">
+                    <div>
+                        <div class="exp-inner"><span></span>
+                            <p>Diseño de mobiliario urbano sostenible, experiencias digitales, campañas publicitarias y
+                                contenido para redes sociales. Proyectos de diseño de producto, UX/UI, identidad visual
+                                y comunicación gráfica, desde el briefing hasta la entrega final.</p>
+                            <div class="chips"><span class="chip">Producto</span><span class="chip">UX/UI</span><span
+                                    class="chip">Identidad</span><span class="chip">Mobiliario urbano</span><span
+                                    class="chip">Social media</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp reveal">
+                <button class="exp-btn"><span class="yr mono">2025</span><span class="role">Diseñadora <i>— Engine
+                            Agency</i></span><span class="where mono">Agencia</span><span class="plus"></span></button>
+                <div class="exp-body">
+                    <div>
+                        <div class="exp-inner"><span></span>
+                            <p>Identidades visuales, campañas digitales, interfaces y dirección de arte. Proyectos
+                                multidisciplinares de diseño, producción y espacios corporativos, asegurando la
+                                coherencia visual de cada proyecto.</p>
+                            <div class="chips"><span class="chip k">Nike</span><span
+                                    class="chip k">PlayStation</span><span class="chip k">Mastercard</span><span
+                                    class="chip">Dirección de arte</span><span class="chip">Interfaces</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp reveal">
+                <button class="exp-btn"><span class="yr mono">2024 — 2025</span><span class="role">Diseñadora Gráfica
+                        <i>Freelance</i></span><span class="where mono">Independiente</span><span
+                        class="plus"></span></button>
+                <div class="exp-body">
+                    <div>
+                        <div class="exp-inner"><span></span>
+                            <p>Identidad visual, comunicación gráfica y diseño editorial para distintos clientes,
+                                gestionando a la vez la relación con el cliente y la ejecución de los proyectos.</p>
+                            <div class="chips"><span class="chip">Identidad</span><span
+                                    class="chip">Editorial</span><span class="chip">Gestión de cliente</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp reveal">
+                <button class="exp-btn"><span class="yr mono">2023</span><span class="role">Prácticas de Diseño <i>—
+                            Exponentia</i></span><span class="where mono">Tecnología</span><span
+                        class="plus"></span></button>
+                <div class="exp-body">
+                    <div>
+                        <div class="exp-inner"><span></span>
+                            <p>Identidad visual y materiales de comunicación para Transforma 23, el evento anual de
+                                divulgación tecnológica de Exponentia. Coordinación creativa con clientes, proveedores y
+                                equipos internos.</p>
+                            <div class="chips"><span class="chip">Transforma 23</span><span
+                                    class="chip">Eventos</span><span class="chip">Identidad</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp reveal">
+                <button class="exp-btn"><span class="yr mono">2019 — 2022</span><span class="role">Producción Gráfica
+                        <i>— Artes Gráficas</i></span><span class="where mono">Imprenta</span><span
+                        class="plus"></span></button>
+                <div class="exp-body">
+                    <div>
+                        <div class="exp-inner"><span></span>
+                            <p>Control de calidad y supervisión de procesos de impresión offset y digital, coordinando
+                                la producción con clientes y proveedores para garantizar el resultado final.</p>
+                            <div class="chips"><span class="chip">Offset</span><span class="chip">Impresión
+                                    digital</span><span class="chip">Control de calidad</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp reveal">
+                <button class="exp-btn"><span class="yr mono">2018</span><span class="role">Diseño Editorial <i>—
+                            Revista El Duende</i></span><span class="where mono">Prensa</span><span
+                        class="plus"></span></button>
+                <div class="exp-body">
+                    <div>
+                        <div class="exp-inner"><span></span>
+                            <p>Maquetación editorial, edición de imágenes y preparación de archivos para publicaciones
+                                impresas y digitales.</p>
+                            <div class="chips"><span class="chip">Maquetación</span><span class="chip">Edición de
+                                    imagen</span><span class="chip">Preimpresión</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOMKAIROS -->
+    <section id="somkairos">
+        <div class="kairos reveal">
+            <div class="kairos-grid">
+                <div>
+                    <span class="mono">03 / Proyecto propio — Founder</span>
+                    <h2>Som<em>Kairos</em></h2>
+                    <p>El proyecto que fundé y que nació como mi TFG de Diseño. Calificado con un 10 y expuesto en el
+                        Madrid Design Festival 2025, hoy sigue creciendo como proyecto propio.</p>
+                    <a class="btn solid" style="background:var(--paper);color:var(--ink);border-color:var(--paper)"
+                        href="https://www.somkairos.com" target="_blank" rel="noopener">Visitar SomKairos <span
+                            class="arr">↗</span></a>
+                    <div class="kairos-facts">
+                        <div><b>10</b><span class="mono">Calificación TFG</span></div>
+                        <div><b>MDF</b><span class="mono">Madrid Design Festival 2025</span></div>
+                        <div><b>Founder</b><span class="mono">Desde 2025</span></div>
+                    </div>
+                </div>
+                <div class="kairos-orb" id="orb">
+                    <svg class="lbl" viewBox="0 0 100 100">
+                        <defs>
+                            <path id="c" d="M50,50 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
+                        </defs>
+                        <text>
+                            <textPath href="#c" textLength="272" lengthAdjust="spacing">SomKairos · el momento oportuno
+                                · SomKairos · el momento oportuno ·</textPath>
+                        </text>
+                    </svg>
+                    <div class="inner" id="orbInner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMACION -->
+    <section class="block" id="formacion">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">04 / Formación</span>
+            <h2 class="sec-title">Estratos de <em>aprendizaje.</em></h2>
+        </div>
+        <div class="strata">
+            <div class="stratum reveal"><span class="mono">Universidad Francisco de Vitoria</span>
+                <h3>Máster en Data Analytics <span class="badge-next">EN CURSO</span><small>Inicio en septiembre de
+                        2026</small></h3><span class="yr">2026</span>
+            </div>
+            <div class="stratum reveal d1"><span class="mono">Universidad Francisco de Vitoria</span>
+                <h3>Doble Grado en Diseño y Publicidad<small>Con Título Propio en Diseño Gráfico y Multimedia</small>
+                </h3><span class="yr">2025</span>
+            </div>
+            <div class="stratum reveal d2"><span class="mono">IES Margarita Salas</span>
+                <h3>Bachillerato Artístico</h3><span class="yr">2020</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECONOCIMIENTOS -->
+    <section class="block" id="premios" style="padding-top:20px">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">05 / Reconocimientos</span>
+            <h2 class="sec-title">Piezas <em>destacadas.</em></h2>
+        </div>
+        <div class="awards">
+            <article class="award tilt reveal"><span class="seal">✦</span><span class="big">1º</span>
+                <div><span class="mono">UFV · 2024</span>
+                    <h3>Primer Premio TFG Social</h3>
+                    <p>Universidad Francisco de Vitoria.</p>
+                </div>
+            </article>
+            <article class="award tilt reveal d1"><span class="seal">✦</span><span class="big">10</span>
+                <div><span class="mono">UFV · 2025</span>
+                    <h3>TFG «SomKairos»</h3>
+                    <p>Calificación máxima. Expuesto en el Madrid Design Festival 2025.</p>
+                </div>
+            </article>
+            <article class="award tilt reveal d2"><span class="seal">✦</span><span class="big">×5</span>
+                <div><span class="mono">UFV</span>
+                    <h3>Beca de Excelencia Académica</h3>
+                    <p>Concedida durante cinco cursos consecutivos.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- IDIOMAS -->
+    <section class="block" id="idiomas" style="padding-top:20px">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">06 / Idiomas</span>
+            <h2 class="sec-title">Cuatro <em>lenguas.</em></h2>
+        </div>
+        <div class="langs">
+            <div class="lang" style="--lvl:100%">
+                <h4>Español</h4>
+                <div class="meter">
+                    <div class="fill"></div>
+                </div><span class="mono">Nativo</span>
+            </div>
+            <div class="lang" style="--lvl:82%">
+                <h4>Inglés</h4>
+                <div class="meter">
+                    <div class="fill"></div>
+                </div><span class="mono">Profesional</span>
+            </div>
+            <div class="lang" style="--lvl:55%">
+                <h4>Portugués</h4>
+                <div class="meter">
+                    <div class="fill"></div>
+                </div><span class="mono">Intermedio</span>
+            </div>
+            <div class="lang" style="--lvl:55%">
+                <h4>Francés</h4>
+                <div class="meter">
+                    <div class="fill"></div>
+                </div><span class="mono">Intermedio</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <span class="mono" style="color:var(--stone-dark)">07 / Contacto</span>
+        <h2 class="reveal" style="margin-top:1.4rem">¿Creamos algo<br><em>que perdure?</em></h2>
+        <button class="mail reveal d1" id="mail">elbapedeco@gmail.com <span style="font-size:.6em">⧉</span></button>
+        <span class="copied mono" id="copied">Email copiado</span>
+        <div class="contact-row reveal d2">
+            <a class="btn" href="https://www.linkedin.com/in/elbaperezdecortabitarte/" target="_blank"
+                rel="noopener">LinkedIn <span class="arr">↗</span></a>
+            <span class="btn" style="cursor:default">+34 640 373 454</span>
+            <a class="btn solid" href="https://www.somkairos.com" target="_blank" rel="noopener">SomKairos <span
+                    class="arr">↗</span></a>
+        </div>
+    </section>
+
+    <footer class="mono"><span>© 2026 Elba Pérez</span><span>Diseño & datos — Madrid</span><a href="#top">Volver arriba
+            ↑</a></footer>
+
+    <script>
+        // Cursor
+        const cur = document.getElementById('cursor');
+        let mx = innerWidth / 2, my = innerHeight / 2, cx = mx, cy = my;
+        addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY });
+        (function loop() { cx += (mx - cx) * .18; cy += (my - cy) * .18; cur.style.left = cx + 'px'; cur.style.top = cy + 'px'; requestAnimationFrame(loop) })();
+        document.querySelectorAll('a,button,.award,.stratum').forEach(el => {
+            el.addEventListener('mouseenter', () => cur.classList.add('big'));
+            el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+        });
+
+        // Nav + barra de progreso + secciones activas
+        const nav = document.getElementById('nav'), prog = document.getElementById('progress');
+        const links = [...document.querySelectorAll('nav ul a')];
+        addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', scrollY > 40);
+            const h = document.documentElement.scrollHeight - innerHeight;
+            prog.style.width = (scrollY / h * 100) + '%';
+            links.forEach(a => {
+                const s = document.querySelector(a.getAttribute('href'));
+                if (s) { const r = s.getBoundingClientRect(); a.classList.toggle('active', r.top < innerHeight * .4 && r.bottom > innerHeight * .4) }
+            });
+            // parallax Venus
+            venus.style.translate = `0 ${scrollY * .18}px`;
+        });
+
+        // Venus: inclinación con el ratón
+        const venus = document.getElementById('venus'), wrap = document.getElementById('venusWrap');
+        document.querySelector('.hero').addEventListener('mousemove', e => {
+            const r = wrap.getBoundingClientRect();
+            const x = (e.clientX - r.left - r.width / 2) / r.width, y = (e.clientY - r.top - r.height / 2) / r.height;
+            venus.style.transform = `rotateY(${x * 18}deg) rotateX(${-y * 8}deg)`;
+        });
+        document.querySelector('.hero').addEventListener('mouseleave', () => venus.style.transform = '');
+
+        // Palabra rotatoria
+        const words = ['diseño', 'tecnología', 'datos', 'producto', 'personas']; let wi = 0;
+        const rot = document.querySelector('#rotator span');
+        setInterval(() => { rot.classList.add('out'); setTimeout(() => { wi = (wi + 1) % words.length; rot.textContent = words[wi]; rot.classList.remove('out') }, 450) }, 2200);
+
+        // Acordeón
+        document.querySelectorAll('.exp-btn').forEach(b => b.addEventListener('click', () => {
+            const item = b.parentElement, was = item.classList.contains('open');
+            document.querySelectorAll('.exp').forEach(x => x.classList.remove('open'));
+            if (!was) item.classList.add('open');
+        }));
+
+        // Aparición al hacer scroll + contadores + idiomas
+        const io = new IntersectionObserver(es => es.forEach(e => {
+            if (!e.isIntersecting) return;
+            e.target.classList.add('in');
+            e.target.querySelectorAll('[data-count]').forEach(n => {
+                const end = +n.dataset.count; let t0 = null;
+                const step = t => { t0 ??= t; const p = Math.min((t - t0) / 1400, 1); n.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step) };
+                requestAnimationFrame(step);
+            });
+            io.unobserve(e.target);
+        }), { threshold: .18 });
+        document.querySelectorAll('.reveal,.lang').forEach(el => io.observe(el));
+
+        // Tarjetas con inclinación 3D
+        document.querySelectorAll('.tilt').forEach(c => {
+            c.addEventListener('mousemove', e => {
+                const r = c.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+                c.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) translateY(-6px)`
+            });
+            c.addEventListener('mouseleave', () => c.style.transform = '');
+        });
+
+        // Orbe SomKairos sigue al ratón
+        const orb = document.getElementById('orb'), oi = document.getElementById('orbInner');
+        orb.addEventListener('mousemove', e => {
+            const r = orb.getBoundingClientRect();
+            oi.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .12}px,${(e.clientY - r.top - r.height / 2) * .12}px)`
+        });
+        orb.addEventListener('mouseleave', () => oi.style.transform = '');
+
+        // Copiar email
+        document.getElementById('mail').addEventListener('click', async () => {
+            const c = document.getElementById('copied');
+            try { await navigator.clipboard.writeText('elbapedeco@gmail.com'); c.textContent = 'Email copiado' }
+            catch { c.textContent = 'elbapedeco@gmail.com' }
+            c.classList.add('show'); setTimeout(() => c.classList.remove('show'), 2200);
+        });
+    </script>
 </body>
 
 </html>
